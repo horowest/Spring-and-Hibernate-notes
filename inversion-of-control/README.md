@@ -91,7 +91,7 @@ Let's see the blurb from the [Spring Reference Manual](https://docs.spring.io/sp
 <br/>
 
 ## Inversion of Control in Spring
-The org.springframework.context.ApplicationContext interface represents the Spring IoC container and is responsible for instantiating, configuring, and assembling the beans. The container gets its instructions on what objects to instantiate, configure, and assemble by reading configuration metadata. The configuration metadata is represented in XML, Java annotations, or Java code.
+The `ApplicationContext` interface represents the Spring IoC container and is responsible for instantiating, configuring, and assembling the beans. The container gets its instructions on what objects to instantiate, configure, and assemble by reading configuration metadata. The configuration metadata is represented in XML, Java annotations, or Java code.
 
 ![Spring IoC](https://docs.spring.io/spring-framework/docs/current/reference/html/images/container-magic.png)
 
