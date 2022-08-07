@@ -95,6 +95,7 @@ The org.springframework.context.ApplicationContext interface represents the Spri
 
 ![Spring IoC](https://docs.spring.io/spring-framework/docs/current/reference/html/images/container-magic.png)
 
+
 ### Primary Functions of Sprint Container
 
 The primary functions of Spring Container are:
