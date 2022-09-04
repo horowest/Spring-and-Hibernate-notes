@@ -29,8 +29,7 @@ The **Bean Scope** refer to the lifecycle of a bean. It will determine how long 
 <beans ...>
     <bean id="myCoach"
           class="com.luv2code.springdemo.TrackCoach"
-          init-method="doMyStartupStuff"
-          destroy-method="doMyCleanupStuff">
+          scope="singleton">
           ...
     </bean>
 </beans>
@@ -54,7 +53,8 @@ In contrast to the other scopes, Spring does not manage the complete lifecycle o
 <beans ...>
     <bean id="myCoach"
           class="com.luv2code.springdemo.TrackCoach"
-          scope="singleton">
+          init-method="doMyStartupStuff"
+          destroy-method="doMyCleanupStuff">
           ...
     </bean>
 </beans>
