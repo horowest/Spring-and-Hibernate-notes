@@ -424,6 +424,31 @@ If we don't want to hard coded the literal values in the config file, we can rea
 <br/>
 
 ## Dependency Injection with Java Annotations (Constructor Injection)
+1. First we need to enable component scaning in our Spring config file.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- enable component scanning -->
+	  <context:component-scan base-package="com.udemy.springapp" />
+    <!-- Define the dependency-->
+    <bean id="myFortuneService" class="com.luv2code.springdemo.HappyFortuneService">
+    </bean>
+
+    <!-- Define your beans here -->
+    <bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
+        <!-- Set up constructor injection -->
+        <constructor-arg ref="myFortuneService" />
+    </bean>
+</beans>
+```
+
+2. Add @Component anonotaions to our classes instead of declaring bean definetions.
 
 ### Define the Dependency Interface and Class
 
