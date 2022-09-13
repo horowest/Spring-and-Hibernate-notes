@@ -435,20 +435,12 @@ If we don't want to hard coded the literal values in the config file, we can rea
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- enable component scanning -->
-	  <context:component-scan base-package="com.udemy.springapp" />
-    <!-- Define the dependency-->
-    <bean id="myFortuneService" class="com.luv2code.springdemo.HappyFortuneService">
-    </bean>
-
-    <!-- Define your beans here -->
-    <bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
-        <!-- Set up constructor injection -->
-        <constructor-arg ref="myFortuneService" />
-    </bean>
+    <context:component-scan base-package="com.udemy.springapp" />
+	
 </beans>
 ```
 
-2. Add @Component anonotaions to our classes instead of declaring bean definetions.
+2. Add `@Component` anonotaions to our classes instead of declaring bean definetions.
 
 ### Define the Dependency Interface and Class
 
