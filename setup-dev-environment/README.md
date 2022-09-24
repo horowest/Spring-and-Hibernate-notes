@@ -125,7 +125,7 @@
 2. Unzip and copy all the `/lib/*.jar` files to the project's `WebContent/WEB-INF/lib` directory.
 3. Copy [`javax.servlet.jsp.jstl-1.2.1.jar`](./spring-mvc-demo/lib/javax.servlet.jsp.jstl-1.2.1.jar) and [`javax.servlet.jsp.jstl-api-1.2.1.jar`](./spring-mvc-demo/lib/javax.servlet.jsp.jstl-api-1.2.1.jar) to the project's `WebContent/WEB-INF/lib` directory.
 
-`Note` WEB-INF/lib is a special directory. Fikes places in this directory are automatically added to Java Build Path / Classpath. This is as per Java Servlet Specification. No need to manually configure Build Path / Classpath.
+`Note` ``WEB-INF/lib`` is a special directory. Files places in this directory are automatically added to Java Build Path / Classpath. This is as per Java Servlet Specification. No need to manually configure Build Path / Classpath.
 
 ### Setup Config Files
 
