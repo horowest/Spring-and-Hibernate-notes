@@ -313,7 +313,7 @@ session.createQuery("delete from Student where id=2").executeUpdate();
 In the database, we most likely will have multiple tables with relationships:
 
 - **One-to-One Mapping**: e.g. An instructor can have an instructor detail entity.
-- **One-to-Many Mapping**: e.g. An instructor can have many courses.
+- **One-to-Many Mapping**: e.g. An instructor can have many courses. 
 - **Many-to-Many Mapping**: e.g. A course can have many students; A student can join many courses.
 
 ### Primary Key and Foreign Key
@@ -777,6 +777,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 ```
 
 ### Create Course Class and Define Relationships
+`Note` The bidirectional one-to-many association gets defined on the many side.
 
 ```java
 @Entity
