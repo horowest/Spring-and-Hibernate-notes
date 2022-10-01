@@ -841,7 +841,7 @@ public class Course {
 ### Update Instructor Class
 `Note` Bidirectional association require an additional step when you persist a new entity. You need to update the association on both sides when you add or remove an entity. Updating the associations on both entities is an error-prone task. Therefore, it’s a good practice to provide a helper method that adds another entity to the many side of the association.
 
-More on [thorben janssen's blog on @OneToMany](#https://thorben-janssen.com/hibernate-tips-map-bidirectional-many-one-association/)
+More on [thorben janssen's blog on @OneToMany](https://thorben-janssen.com/hibernate-tips-map-bidirectional-many-one-association/)
 
 ```java
 @Entity
