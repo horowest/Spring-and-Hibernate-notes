@@ -872,6 +872,8 @@ public class Instructor {
 
 ## Mapping: Eager v.s. LazyLoading
 
+https://www.baeldung.com/hibernate-lazy-eager-loading
+
 ### Eager Loading
 
 ```java
