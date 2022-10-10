@@ -23,7 +23,7 @@
 6. [Spring MVC](./spring-mvc/)
 7. [Hibernate](./hibernate/)
 8. [Project: Build Database Web Application]()
-9. [Aspect-Oriented Programming](./aspect-oriented-programming/)
+9. [Aspect-Oriented Programming](https://springcert.sourceforge.net/2.5/2-study-aop.html)
 10. [Maven](./maven/)
 11. [Spring Security](./spring-security/)
 12. [Spring REST](./spring-rest/)
